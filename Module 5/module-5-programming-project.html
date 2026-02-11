@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CMPS 162: Module 5 Programming Project</title>
+<style>
+* { font-family: sans-serif; }
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+  div#div1,div#div2 {margin:0,.25em;padding:.5em;} 
+  div#outText{line-height:1.5em;min-height:1.5em;}
+</style>
+<script>
+// DON'T CHANGE THE showText() FUNCTION
+function showText() {
+  
+  let iText = document.getElementById("inText");
+  let oText = document.getElementById('outText');
+
+  oText.innerText = iText.value;
+  
+}
+
+// Remember to use double quotes, "", for attribute values in HTML and single quotes, '', around
+// strings inside of JavaScript inside of attributes.
+// e.g. <span onClick="document.getElementById('anElemID').style.color='red'">Span text.</span>
+
+//--------//
+// Events //
+//--------//
+console.log("Events");
+
+// 1. Change the link (the <a> tag) in the HTML body below such that the 
+//    message "A link was clicked" is alerted when the link is clicked.
+//    This can be accomplished by either updating the href attribute or adding the 
+//    onClick attribute then coding the required javascript.
+
+
+
+
+//--------------//
+// Input Fields //
+//--------------//
+console.log("Input Fields");
+
+// 1. Change the background color to red for the input text field (the <input>
+//    tag) in the HTML body when obtaining the focus and change it back to
+//    white when the focus is lost. 
+
+// 2. Set the onkeyUp attribute of the input text field so that it calls the 
+//    showText function. The showText function is already coded. Just get it to execute
+//    wehn typing in the text box.
+
+//------------//
+// Paragraphs //
+//------------//
+console.log("Paragraphs");
+
+// 1. Add the attribute to the paragraph below (the <p> tag) so that the goPioneers 
+//    function executes when the paragraph is clicked.
+//    Finish the goPioneers Function so that it changes the text in the paragraph 
+//    below from "Hello World!" to "Go Pioneers!" when the user clicks the paragraph.
+
+// 2. Add the mouseOver attribute and insert JavaScript to conver the cursor to a pointer.
+
+function goPioneers(){
+  
+  
+}
+
+
+//--------//
+// Images //
+//--------//
+console.log("Images");
+
+// 1. Uncomment the img tag below. 
+// 2. Set the source to https://www.pointpark.edu/_files/images/logo-vertical--green.svg.
+// 3. Add the onclick attribute and code javascript to make the img disappear when clicked.
+
+
+
+//--------//
+// Styles //
+//--------//
+console.log("Styles");
+
+// 1. Write the swapColors function called via the onclick attribute
+//    in the div tags below.
+//    Use the style of div1 and div2 to swap the colors of the divs.
+//    Hint: the style attribute that stores the background color is
+//    called backgroundColor.
+
+</script>
+</head>
+<body>
+
+  <a href="#">Click here for a greeting!</a>
+  <br>
+  <br>
+
+
+  <input id="inText" type="text">
+  <br>
+
+  <div id="outText"></div>
+
+ <p id="para1">Hello World!</p>
+
+  <div id="div1"
+       style="background-color:yellow;"
+       onclick="swapColors();">
+    Point Park University
+  </div>
+  <div id="div2"
+       style="background-color:green;"
+       onclick="swapColors();">
+    Pioneers
+  </div>
+
+ <!--<img src="">--> 
+
+</body>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clickable Link</title>
+</head>
+<body>
+<a href="#" onClick="alert('A link was clicked')">Click here for a greeting!</a>
+</body>
+</html>

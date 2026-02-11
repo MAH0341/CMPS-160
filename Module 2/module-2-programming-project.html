@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CMPS 162: Module 2 Programming Project</title>
+<style>* { font-family: monospace; }</style>
+<script>
+
+// NOTE: You can enter both code and explanations. For an explanation, start
+//       the line with '//' which indicates a comment.
+
+//-----------//
+// Prompts //
+//-----------//
+console.log("prompts");
+
+// 1. Add code to set the variable firstName below to the value returned from a prompt asking "What is your first name?".
+var firstName = "";
+
+var firstName = prompt("What is your first name?");
+
+
+// 2. Write the value from #1 in the console.
+
+// 3. Code another prompt that asks for the users last name and populates a lastName variable with the returned value.
+// log the lastName variables value to the console.
+
+var lastName = prompt("What is your last name?");
+
+// 4. If the firstName variable is empty (equal to ""), then set its value to "John" or "Jane".
+
+// 5. If the lastName variable is empty, then set its value to "Doe".
+
+//--------//
+// Concatentate Strings //
+//--------//
+console.log("Values");
+
+// 5. Code an alert that display "Hello" to a concatination of the firstName and LastName variables
+//    Example: the alert should show something like 'Hello Michael Jordan'.
+//    NOTE: include space between "Hello" and the first name and the last name.
+
+alert("Hello " + firstName + " " + lastName);
+
+
+//------------------------------------------------ //
+// COMPARISON OPERATORS and CONDITIONAL STATEMENTS //
+//-------------------------------------------------//
+console.log("Comparison Operators");
+
+// 6. Show how you would validate that the variable xyz equals 45, type the code below the xyz variable. Log the result to the console.
+
+var xyz = 45;
+console.log(xyz = 45);
+
+
+// 7. Create a conditional statement that validates if the variable "start" is greater than "end" and "end" is less than "start". Log the result to the console.
+var start = 500;
+var end = 400;
+
+
+// 8. Code a prompt that populates a variable called "score" with a number. Using an if/else statement alert "You Passed!" to the user if 
+// the score is greater than or equal to 60 else alert "Sorry. You failed."  
+
+var score = prompt("Please enter your score:");
+if (score >= 60) {
+    alert("You Passed!");
+} else {
+    alert("Sorry. You failed.");
+}
+
+//------------------------------------------------ //
+// ARRAYS //
+//-------------------------------------------------//
+
+// 9. Code an array to hold 5 objects. Provide 5 different places where you would like to vacation.
+
+var vacationDestinations = [
+    { place: "Pittsburgh"},
+    { place: "Kansas"},
+    { place: "Salt Lake City"},
+    { place: "Montuk"},
+    { place: "Rhode Island"}
+];
+
+
+// 10. Output to the console the array created in 9.
+
+console.log(vacationDestinations);
+
+// 11. Apply the "pop" function to the array and log the value that was removed. 
+
+var removedDestination = vacationDestinations.pop();
+console.log("Removed destination:", removedDestination);
+
+
+// 12. Accept input via a prompt from the user and use the push function to add the user's input to your vacation places array.
+// Log the array to the console. 
+
+var userInput = prompt("Enter a vacation destination:");
+vacationDestinations.push({ place: userInput });
+console.log(vacationDestinations);
+
+
+
+</script>
+</head>
+<body>
+  See console!
+</body>
+</html>

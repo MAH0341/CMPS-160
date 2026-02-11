@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CMPS 162: Module 7 Programming Project</title>
+<style>* { font-family: monospace; }</style>
+<script>
+
+//---------//
+// Objects //
+//---------//
+console.log("Objects");
+
+// 1. Complete the implementation of the Circle object that has methods to
+//    calculate the area and circumference. You can find a start of the code
+//    and how the object is supposed to be used below. 
+//    NOTE: that the initial code has several lines commented out that 
+//    you must complete.
+//    HINT: use the Math.PI to get the value of Pi.
+//    Google how to calculate the area and circumference of a circle if 
+//    you do not recall.
+//    Round to the nearest 100th e.g. n.nn
+
+function Circle(radius) {
+// Replace the question marks to complete the constructor
+// 
+
+// this.? = ?;
+
+// 
+// implement getArea() method
+//
+
+    this.getArea = function () {
+
+    // Your code goes here
+
+    }
+
+// implement a getCircumference() method
+// ...
+    this.getCircumference = function () {
+
+    // Your code goes here
+
+    }
+
+}
+
+// create the Circle object
+var circle = new Circle(10);
+
+// calculate area, not working yet!
+var area = circle.getArea();
+console.log(area);
+
+// calculate circumference, not working yet!
+var circumference = circle.getCircumference();
+console.log(circumference);
+
+// 2. Write the same implementation for a rectangle. Note that the constructor
+//    takes two parameters in this case: width and height. There should be two 
+//    methods, getArea and getPerimeter.
+//
+//    Like exercise 1, instanciate a rectangle object using the values width=10
+//    and height = 5 then log the area and perimeter to the console.
+
+
+
+
+
+//-----------------//
+// Browser Control //
+//-----------------//
+console.log("Browser Control");
+
+// 1. Create a function that:
+//    (1) Opens a popup window that covers roughly one quarter of the current 
+//        browser. 
+//        a. You will need get the window's outer height and outer width, divide 
+//        them each by two, and then open a new window using the calculated height 
+//        and width values.
+//        b. The function should accept an arguement called url. The value of
+//        this argument will be the url of the web page that opens in the popup.
+//        c. Add an onclick event to the button below to execute the pop-up
+//        function. Pass the url https://it.pointpark.edu/ in the call.
+
+</script>
+</head>
+<body>
+  See console!<br><br>
+<button>IT @ Point Park University</button>
+</body>
+</html>
+
+alert("hi how are you doing");
+console.log(alert);

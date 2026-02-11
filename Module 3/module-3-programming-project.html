@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CMPS 162: Module 3 Programming Project</title>
+<style>* { font-family: monospace; }</style>
+<script>
+
+//---------//
+// Strings //
+//---------//
+console.log("Strings");
+
+// 1. Make all countries in the following array follow the same formatting:
+//    The first letter should be upper case, the rest lower case. Store the properly capitalized
+//    country names in a new array called countries2. Print countries2 to the console.
+
+var countries = ["AustraliA", "greece", "PERU", "ChInA"];
+
+
+// 2. Get every second and third letter from each country in countries2 and concatenate them.
+//    Print the results to the console.
+
+// 3. In the sentence below replace 'a dart' with 'an arrow' and log the result to the console.
+
+var sentence = "Time flies like a dart; fruit flies like a banana.";
+
+var newSentence = sentence.replace('a dart', 'an arrow');
+console.log(newSentence);
+
+
+// 4. Find the index of the last occurrence of flies in the sentence below.
+
+var sentence2 = "The fisherman flies to his favorite spot, where he flies his rod and reel, hoping to catch some flies for dinner.";
+
+// 5. Prompt the user for a string, reverse it, and show the result to the user using an alert.
+
+var userInput = prompt("Please enter a string:");
+var reversedString = userInput.split('').reverse().join('');
+alert("Reversed string: " + reversedString);
+
+//---------//
+// Numbers //
+//---------//
+console.log("Numbers");
+
+// Use the following variable to answer the next questions.
+
+var value = 13.3;
+
+// 6. Round the value using the round function.
+
+var roundedValue = Math.round(value);
+console.log(roundedValue); 
+
+// 7. Round the value up.
+
+var roundedUpValue = Math.ceil(value);
+console.log(roundedUpValue);
+
+// 8. Round the value down.
+
+var roundedDownValue = Math.floor(value);
+console.log(roundedDownValue);
+
+
+// 9. Simulate a coin flip by generating a random number. Assume the coin is
+//    fair and print the result, heads or tails, to the console.
+
+var randomNumber = Math.random();
+var result;
+if (randomNumber < 0.5) {
+    result = "Heads";
+} else {
+    result = "Tails";
+}
+console.log("Coin flip result:", result);
+
+
+//-------//
+// Dates //
+//-------//
+console.log("Dates");
+
+// 10. Prompt the user for their age and proceed to show in what year they
+//    were born (you can assume they already had their birthday in the current
+//    year). 
+
+var age = prompt("Please enter your age:");
+var currentYear = new Date().getFullYear();
+var birthYear = currentYear - age;
+alert("You were born in the year " + birthYear + ".");
+
+
+// 11. Write code that does the following: (1) Use a prompt to obtain the
+//    birth year of the user. (2) Use a prompt to obtain the birth month of
+//    the user. (3) Use a prompt to obtain the birth day of the user.
+//    (4) Calculate how old the user is in days. (5) Show the result to
+//    the user via the console.
+
+var birthYear = prompt("Please enter your birth year:");
+var birthMonth = prompt("Please enter your birth month:");
+var birthDay = prompt("Please enter your birth day:");
+
+
+</script>
+</head>
+<body>
+  See console!
+</body>
+</html>
